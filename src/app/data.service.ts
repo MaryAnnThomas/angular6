@@ -94,7 +94,7 @@ export class DataService {
   getUser(userId) {
     return new Observable((observer) => {
       this.users.forEach(user => {
-        if (user.id === userId) {
+        if (user.id == userId) {
           observer.next(user);
         }
       });
